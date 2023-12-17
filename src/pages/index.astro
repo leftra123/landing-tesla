@@ -3,25 +3,40 @@ import Layout from "../layouts/Layout.astro";
 import LandingHeader from "../components/LandingHeader.astro";
 import HeroSection from "../components/HeroSection.astro";
 import ChargeSection from "../components/ChargeSection.astro";
+import Section from "../components/Section.astro";
+import ModelS from "../components/ModelS.astro";
+import Model3 from "../components/Model3.astro";
+import ModelX from "../components/ModelX.astro";
+import ModelY from "../components/ModelY.astro";
+import PowerWall from "../components/PowerWall.astro";
+import Accessories from "../components/Accessories.astro";
 ---
 
 <Layout title="vainas con tesla">
-    <LandingHeader />
-  <main class="snap-y snap-mandatory relative w-full h-screen overflow-auto scroll-smooth">
+  <LandingHeader />
+  <main
+    class="snap-y snap-mandatory relative w-full h-screen overflow-auto scroll-smooth"
+  >
+    <div class="snap-center">
+      <HeroSection/>
+    </div>
+    <div class="snap-center">
+      <ModelS />
+    </div>
 	<div class="snap-center">
-		<HeroSection />
+	  <Model3 />
 	</div>
 	<div class="snap-center">
-		<ChargeSection />
+	  <ModelX />
 	</div>
 	<div class="snap-center">
-		<HeroSection />
+	  <ModelY />
 	</div>
 	<div class="snap-center">
-		<HeroSection />
+	  <PowerWall />
 	</div>
-	<div class="snap-center">
-		<HeroSection />
+    <div class="snap-center">
+	<Accessories />
 	</div>
-</main>
+  </main>
 </Layout>
