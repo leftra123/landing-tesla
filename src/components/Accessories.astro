@@ -1,0 +1,29 @@
+---
+import Section from "./Section.astro";
+---
+
+<Section
+  title="Carga"
+  subtitle="Carga en cualquier lugar"
+  color="black"
+>
+  <div slot="footer">
+    <a
+      class="border-[3px] border-black bg-black/10 backdrop-blur-sm text-sm rounded font-medium text-black px-12 py-2 inline-block hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer"
+      href="#">
+    Ver accesorios
+    </a>
+    <a
+      class="border-[3px] border-black bg-black/10 backdrop-blur-sm text-sm rounded font-medium text-black px-12 py-2 inline-block hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer"
+      href="#">
+    Comprar ahora
+    </a>
+  </div>
+  
+  <img
+    slot="background"
+    src="/accessories.avif"
+    alt="Accesorios para tu Tesla"
+    class="absolute top-0 left-0 w-full h-full object-cover"
+  />
+</Section>

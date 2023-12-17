@@ -1,0 +1,25 @@
+---
+import Section from "./Section.astro";
+---
+
+<Section
+  title="PowerWall"
+  subtitle="Almacenamiento de energía para el hogar"
+  color="black"
+>
+  <div slot="footer">
+    <a
+      class="border-[3px] border-white bg-white/5 backdrop-blur-sm text-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors duration-300 cursor-pointer"
+      href="#">
+      Saber más
+      </a
+    >
+  </div>
+  
+  <img
+    slot="background"
+    src="/powerwall.avif"
+    alt="PowerWall de Tesla"
+    class="absolute top-0 left-0 w-full h-full object-cover"
+  />
+</Section>

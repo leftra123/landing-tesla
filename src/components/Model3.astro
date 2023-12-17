@@ -1,0 +1,23 @@
+---
+import Section from "./Section.astro";
+---
+
+<Section
+  title="Model 3"
+  subtitle="Concertar una prueba de conducción"
+  color="black"
+>
+  <div slot="footer">
+    <a
+      class="border-[3px] border-white bg-white/5 backdrop-blur-sm text-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors duration-300 cursor-pointer"
+      href="#">Prueba de conducción</a
+    >
+  </div>
+  
+  <img
+    slot="background"
+    src="/model-3.avif"
+    alt="Model 3"
+    class="absolute top-0 left-0 w-full h-full object-cover"
+  />
+</Section>
